@@ -1,0 +1,111 @@
+.contact {
+    background-color: #000;
+    display: flex;
+    width: 100vw;
+  height: calc(100vh - 4.6rem);
+  scroll-snap-align: start;
+}
+
+
+.left
+{
+    flex: 1;
+    overflow: hidden;
+}
+
+.left img
+{
+    height: 90%;
+ 
+}
+
+
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right h2
+{
+  font-size: 30px;
+}
+
+
+.right form
+{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.right input
+{
+  outline: none;
+  padding: 1rem;
+  border-radius: .4rem;
+  width: 300px;
+  height: 3rem;
+  font-size: 16px;
+}
+
+.right textarea
+{
+  border-radius: .3rem;
+  outline: none;
+  padding: .4rem;
+  width: 300px;
+  height: 200px;
+  font-size: 17px;
+}
+
+.right button
+{
+  width: 10rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.3rem;
+  border: 1px solid #fff;
+  background: #000;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.right button:focus
+{
+    outline: none;
+  }
+
+  .right span
+  {
+    color: green;
+  }
+
+
+@media (max-width:800px) {
+   .contact
+   {
+    flex-direction: column;
+   }
+
+   .right input
+   {
+    width: 200px;
+    height: 20px;
+  }
+
+  .right textarea
+  {
+    width: 200px;
+    height: 100px;
+  }
+}

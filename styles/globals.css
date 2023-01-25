@@ -1,0 +1,246 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+.app
+{
+  height: 100vh;
+}
+.app::-webkit-scrollbar
+{
+  display: none;
+}
+.sections
+{
+  color: #fff;
+  width: 100%;
+  height: calc(100vh - 4.6rem);
+  background: #000;
+  position: relative;
+  top: 4.5rem;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.sections::-webkit-scrollbar
+{
+  display: none;
+}
+
+
+.topbar
+{
+
+    width: 100%;
+    height: 4.6rem;
+    background: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: .8s ease;
+
+}
+
+.wrapper
+{
+  padding: .4rem 1.88rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper .leftside
+{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ 
+
+.wrapper .contacts
+{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+ 
+}
+
+.contacts .icon
+{
+  cursor: pointer;
+  align-items: center;
+  font-weight: bold;
+  display: flex;
+  transition: .5s ease;
+  gap: .8rem;
+}
+
+.contacts .icon:nth-child(1)
+{
+  color: #fff;
+  transition: .6s;
+}
+
+.contacts .icon:nth-child(1):hover
+{
+  color: red;
+  transition: .6s;
+
+}
+
+.contacts .icon:nth-child(2)
+{
+  color: #fff;
+  transition: .6s;
+}
+
+.contacts .icon:nth-child(2):hover
+{
+  transition: .6s;
+  color: red;
+}
+
+@media (max-width:800px) {
+  
+  .contacts .icon
+  {
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+
+}
+
+@media (max-width:700px) {
+  
+}
+
+
+
+.wrapper .logo
+{
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.right
+{
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  width: 2.4rem;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+
+
+.right span
+{
+  background: #fff;
+  height: .3rem;
+  width: 100%;
+  border-radius: .2rem;
+  transform-origin: left;
+  transition: .8s ease;
+}
+
+.right:hover span
+{
+  background: red;
+  transition: .5s ease;
+}
+
+.active
+{
+
+    width: 100%;
+    height: 4.6rem;
+    background: #fff;
+    color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: .8s ease;
+  }
+
+
+  .active .contacts .icon:nth-child(1)
+  {
+    color: #000;
+    transition: .6s;
+  }
+  
+  .active .contacts .icon:nth-child(2)
+  {
+    color: #000;
+    transition: .6s;
+  }
+
+
+
+.active .right span
+{
+  background: #000;
+  height: .3rem;
+  width: 100%;
+  border-radius: .2rem;
+  transform-origin: left;
+  transition: .8s ease;
+}
+
+.active .right
+{
+  transition: .5s ease;
+}
+
+.active .right:hover span
+{
+  background: red;
+  transition: .5s ease;
+}
+
+.active .right span:nth-child(1)
+{
+  transform: rotate(45deg);
+  transition: .8s ease;
+}
+.active .right span:nth-child(2){
+  opacity: 0;
+  transition: .8s ease;
+
+}
+
+.active .right span:nth-child(3){
+  transform: rotate(-45deg);
+  transition: .8s ease;
+
+}
+.a
+{
+  color: red;
+  text-decoration: none;
+  transition: .4s;
+}
+
+.nav .a:hover
+{
+  color: #fff;
+  transition: .6s;
+}
+

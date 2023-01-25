@@ -1,0 +1,27 @@
+
+.portfolioList 
+{
+  
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.portfolioList:hover
+{
+  background: #333;
+}
+
+.portfolioListactive 
+{
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+}
