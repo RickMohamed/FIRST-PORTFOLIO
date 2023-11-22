@@ -3,8 +3,8 @@ import Contact from '../pages/Contact'
 import Portfolio from '../pages/Portfolio'
 import Topbar from '../comps/Topbar'
 import Menubar from '../comps/Menubar'
-import Testimonials from '../pages/Testimonials'
-import Works from '../pages/Works'
+import About from './About'
+import Services from './Services'
 
 
 const Main = () => {
@@ -18,8 +18,8 @@ const Main = () => {
       <div className="sections">
         <Intro/>
         <Portfolio/>
-        <Works/>
-        <Testimonials/>
+        <Services/>
+        <About/>
         <Contact/>
       </div>
     </div>

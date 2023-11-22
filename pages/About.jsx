@@ -1,6 +1,6 @@
-import styles from '../styles/test.module.css'
+import styles from '../styles/about.module.css'
 
-const Testimonials = () => {
+const About = () => {
     const data = [
         {
           id: 1,
@@ -35,8 +35,8 @@ const Testimonials = () => {
         },
       ];
       return (
-        <div className={styles.testimonials} id="testimonials">
-          <h1>Testimonials</h1>
+        <div className={styles.about} id="about">
+          <h1>About</h1>
           <div className={styles.container}>
             {data.map((d) => (
               <div className={styles.card}>
@@ -63,4 +63,4 @@ const Testimonials = () => {
       );
 }
  
-export default Testimonials;
+export default About;

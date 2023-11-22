@@ -1,8 +1,8 @@
 
 .topbaricon
 {
-  width: 2rem;
-  height: 2rem;
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 
@@ -59,13 +59,13 @@
 }
 .rightwrapper h1
 {
-  font-size: 3.7rem;
+  font-size: 4.7rem;
   margin: .625rem 0;
 }
 
 .rightwrapper h2
 {
-  font-size: 1.99rem;
+  font-size: .99rem;
 }
 
 .rightwrapper h3
@@ -113,7 +113,7 @@
 
 .menu
 {
-  width: 15rem;
+  width: 13rem;
   height: calc(100vh - 4.6rem);
   background: #fff;
   position: fixed;
@@ -143,14 +143,14 @@
 
 .menu li p
 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #000;
 }
 
 
 .menuu
 {
-  width: 15rem;
+  width: 13rem;
   height: calc(100vh - 4.6rem);
   background: #fff;
   position: fixed;
@@ -174,18 +174,25 @@
 {
   width: 100%;
   padding: 1.3rem 2rem;
+  transition: .3s ease;
 }
 
 .menuu div:hover
 {
-  background: lightgray;
-  transition: .2s ease;
+  background: #000;
+  color: #fff;
+  transition: .3s ease;
 }
 
 
+.menuu div:hover li p
+{
+  color: #fff;
+}
+
 .menuu li p
 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #000;
 }
 

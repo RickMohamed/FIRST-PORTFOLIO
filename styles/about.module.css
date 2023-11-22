@@ -1,11 +1,11 @@
 
 @media (max-width:800px) {
-    .testimonials
+    .about
     {
         justify-content: space-around;
     }
 
-    .testimonials h1
+    .about h1
     {
         font-size: 20px;
       }
@@ -18,7 +18,7 @@
 }
 
 
-.testimonials {
+.about {
     width: 100vw;
   height: calc(100vh - 4.6rem);
   scroll-snap-align: start;
@@ -28,7 +28,7 @@ color: #fff;
     align-items: center;
 }
 
-.testimonials h1 {
+.about h1 {
     font-size: 3.2rem;
 }
 

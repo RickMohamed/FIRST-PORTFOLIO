@@ -4,9 +4,7 @@ import PortfolioList from '../pages/PortfolioList';
 import {
   featuredPortfolio,
   webPortfolio,
-  mobilePortfolio,
   designPortfolio,
-  contentPortfolio,
 } from "../data";
 
 
@@ -24,17 +22,10 @@ const Portfolio = () => {
       title: "Web App",
     },
     {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
       id: "design",
       title: "Design",
     },
-    {
-      id: "content",
-      title: "Content",
-    },
+    
   ];
 
 
@@ -46,15 +37,11 @@ const Portfolio = () => {
       case "web":
         setData(webPortfolio);
         break;
-      case "mobile":
-        setData(mobilePortfolio);
-        break;
+      
       case "design":
         setData(designPortfolio);
         break;
-      case "content":
-        setData(contentPortfolio);
-        break;
+      
       default:
         setData(featuredPortfolio);
     }
@@ -75,13 +62,13 @@ const Portfolio = () => {
         ))}
       </ul>
       <div className={styles.container}>
-        {data.map((d) => (
+        {data.map((item) => (
           <div className={styles.item}>
             <img
-              src={d.img}
+              src={item.img}
               alt=""
             />
-            <h3>{d.title}</h3>
+            <h3>{item.title}</h3>
           </div>
         ))}
       </div>

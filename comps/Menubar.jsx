@@ -4,16 +4,20 @@ import Context from '../contexts/Context';
 
 const Menubar = () => {
 
-    const {open} = useContext(Context)
+    const handleMenu=()=>{
+        setOpen(!open)
+    }
+
+    const { open , setOpen} = useContext(Context)
     return ( 
         <>
         <div className={`${open ? styles.menu: styles.menuu}`}>
             <ul>
-                <a href="#intro"><div><li><p>Home</p></li></div></a>
-                <a href="#portfolio"><div><li><p>Porfolio</p></li></div></a>
-                <a href="#works"><div><li><p>Works</p></li></div></a>
-                <a href="#testimonials"><div><li><p>Testimonials</p></li></div></a>
-                <a href="#contact"><div><li><p>Contact</p></li></div></a>
+                <a onClick={handleMenu} href="#intro"><div><li><p>Home</p></li></div></a>
+                <a onClick={handleMenu} href="#portfolio"><div><li><p>Porfolio</p></li></div></a>
+                <a onClick={handleMenu} href="#services"><div><li><p>Services</p></li></div></a>
+                <a onClick={handleMenu} href="#about"><div><li><p>About</p></li></div></a>
+                <a onClick={handleMenu} href="#contact"><div><li><p>Contact</p></li></div></a>
             </ul>
         </div>
         </>

@@ -57,18 +57,19 @@
 
 .wrapper .leftside
 {
-  width: 50%;
+  min-width: 70%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
  
 
 .wrapper .contacts
 {
+
   display: flex;
   align-items: center;
+  margin-left: auto;
   gap: 2rem;
  
 }
@@ -81,6 +82,22 @@
   display: flex;
   transition: .5s ease;
   gap: .8rem;
+}
+
+.icons
+{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.topbar-icon
+{
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .contacts .icon:nth-child(1)
