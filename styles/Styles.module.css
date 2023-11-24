@@ -12,6 +12,8 @@
   height: calc(100vh - 4.6rem);
   scroll-snap-align: start;
   display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 
 .left
@@ -23,10 +25,9 @@
 
 .introimg
 {
-  width: 43.75rem;
+  min-width: 43.75rem;
+  padding: 0 4rem;
   height: 43.75rem;
-  background: #fff;
-  border-radius: 0 50% 0 0;
   display: flex;
   align-items: flex-end;
   align-items: center;
@@ -35,7 +36,9 @@
 
 .introimg img
 {
+  transition: .35s ease;
   object-fit: cover;
+  border-radius: 0 0 70% 70%;
   margin-right: 2rem;
   width: 80%;
   height: 90%;
@@ -113,9 +116,9 @@
 
 .menu
 {
-  width: 13rem;
+  width: 11rem;
   height: calc(100vh - 4.6rem);
-  background: #fff;
+  background: #000;
   position: fixed;
   top: 4.375rem;
   right: -15.5rem;
@@ -143,16 +146,16 @@
 
 .menu li p
 {
-  font-size: 1.5rem;
-  color: #000;
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 
 .menuu
 {
-  width: 13rem;
+  width: 11rem;
   height: calc(100vh - 4.6rem);
-  background: #fff;
+  background: #000;
   position: fixed;
   top: 4.6rem;
   right: -2px;
@@ -160,6 +163,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  color: #fff;
   transition: .8s ease;
   opacity: 1;
 }
@@ -168,11 +172,13 @@
 .menuu a
 {
   text-decoration: none;
+  color: #fff;
 }
 
 .menuu div
 {
   width: 100%;
+  color: #fff;
   padding: 1.3rem 2rem;
   transition: .3s ease;
 }
@@ -187,13 +193,16 @@
 
 .menuu div:hover li p
 {
-  color: #fff;
+  transition: .27s ease;
+  color: red;
+  letter-spacing: .27rem;
 }
 
 .menuu li p
 {
-  font-size: 1.5rem;
-  color: #000;
+  font-size: 1.3rem;
+  transition: .27s ease;
+  color: #fff;
 }
 
 
@@ -212,3 +221,84 @@
 
 }
 
+
+
+@media (max-width:1300px) {
+  .introimg
+  {
+   background: #000;
+  }
+
+  .introimg img
+  {
+    transition: .35s ease;
+    scale: .94;
+  }
+  
+}
+
+@media (max-width:1200px) {
+  .introimg
+  {
+   width: 38rem;
+  }}
+
+  @media (max-width:1100px) {
+    .introimg img
+    {
+      transition: .35s ease;
+     transform: translateX(-4rem);
+     scale: .89;
+    }
+  
+  }
+  @media (max-width:1000px) {
+   
+    .introimg img
+    {
+      transition: .35s ease;
+     transform: translateX(-6rem);
+     scale: .8;
+    }
+  
+  } 
+  
+ @media (max-width:900px) {
+   
+    .introimg img
+    {
+      transition: .35s ease;
+     transform: translateX(-9rem);
+     scale: .7;
+    }
+  
+  }
+  @media (max-width:800px) {
+   
+    .introimg img
+    {
+      transition: .35s ease;
+     transform: translateX(-14rem);
+     scale: .7;
+    }
+  
+  }
+  @media (max-width:600px) {
+    .intro
+    {
+      min-height: 100vh;
+      flex-direction: column;
+    }
+    .introimg
+    {
+     display: none;
+    }
+
+    .right
+    {
+      position: absolute;
+      height: 70vh;
+    }
+  
+  }
+ 

@@ -1,16 +1,44 @@
-.works
+.services
 {
     scroll-snap-align: start;
     width: 100vw;
-    height: calc(100vh - 4.6rem);
+    min-height: calc(100vh - 4.6rem);
     background-color: #000;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     position: relative;
-    color: #000;
 }  
 
+.services h1
+{
+  font-family: serif;
+  letter-spacing: .7rem;
+  font-size: 1.3rem;
+  color: #888;
+  margin: 8rem 0 4rem 0;
+}
+
+.servicesCards
+{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.servicesCard
+{
+  width: 20rem;
+  height: 25rem;
+  border: 2px solid rgba(255, 0, 0, 0.719);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: .5rem;
+  align-items: center;
+}
 
 
 .arrowleft

@@ -31,50 +31,15 @@ const Services = () => {
       },
     ];
   
-    const handleClick = (way) => {
-      way === "left"
-        ? setCurrentSlide(currentSlide > 0 ? currentSlide - 1 : 2)
-        : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
-    };
-    
+
     return (
-      <div className={styles.works} id="services">
-        <div
-          className={styles.slider}
-          style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
-        >
-          {data.map((d) => (
-            <div className={styles.container}>
-              <div className={styles.item}>
-                <div className={styles.left}>
-                  <div className={styles.leftContainer}>
-                    
-                    <h2>{d.title}</h2>
-                    <p>{d.desc}</p>
-                  </div>
-                </div>
-                <div className={styles.right}>
-                  <img
-                    src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/10/attachment_100040756-e1538485934255.jpeg?auto=format&q=60&fit=max&w=930"
-                    alt=""
-                  />
-                </div>
+      <div className={styles.services} id="services">
+          <h1>Services</h1>
+          <div className={styles.servicesCards}>
+              <div className={styles.servicesCard}>
+            
               </div>
-            </div>
-          ))}
-        </div>
-        <img
-          src="arrow.png"
-          className={styles.arrowleft}
-          alt=""
-          onClick={() => handleClick("left")}
-        />
-        <img
-          src="arrow.png"
-          className={styles.arrowright}
-          alt=""
-          onClick={() => handleClick()}
-        />
+          </div>
       </div>
     );
 }

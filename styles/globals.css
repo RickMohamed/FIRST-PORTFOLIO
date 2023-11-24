@@ -23,7 +23,7 @@
   background: #000;
   position: relative;
   top: 4.5rem;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   scroll-behavior: smooth;
 }
 
@@ -62,7 +62,14 @@
   align-items: center;
 }
 
- 
+.logo
+{
+  margin: auto 0;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+} 
 
 .wrapper .contacts
 {
@@ -96,33 +103,28 @@
 {
   text-decoration: none;
   margin-left: 1rem;
+  font-size: 1.7rem;
   color: #fff;
-  font-size: 2rem;
 }
 
-.contacts .icon:nth-child(1)
+
+.topbaricon
 {
+  text-decoration: none;
+  font-size: 1.5rem;
   color: #fff;
+}
+.contacts .icon{
+  color: #fff;
+  font-size: .9rem;
   transition: .6s;
 }
 
-.contacts .icon:nth-child(1):hover
+.contacts .icon:hover
 {
   color: red;
   transition: .6s;
 
-}
-
-.contacts .icon:nth-child(2)
-{
-  color: #fff;
-  transition: .6s;
-}
-
-.contacts .icon:nth-child(2):hover
-{
-  transition: .6s;
-  color: red;
 }
 
 @media (max-width:800px) {
@@ -144,13 +146,7 @@
 
 
 
-.wrapper .logo
-{
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-decoration: none;
-  color: inherit;
-}
+
 
 .right
 {
@@ -159,8 +155,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 2rem;
-  width: 2.4rem;
+  height: 1.9rem;
+  width: 2.1rem;
   cursor: pointer;
   transition: .5s ease;
 }
@@ -170,7 +166,7 @@
 .right span
 {
   background: #fff;
-  height: .3rem;
+  height: .2rem;
   width: 100%;
   border-radius: .2rem;
   transform-origin: left;
@@ -179,7 +175,6 @@
 
 .right:hover span
 {
-  background: red;
   transition: .5s ease;
 }
 
@@ -188,7 +183,7 @@
 
     width: 100%;
     height: 4.6rem;
-    background: #fff;
+    background: #000;
     color: #000;
     position: fixed;
     top: 0;
@@ -197,23 +192,12 @@
   }
 
 
-  .active .contacts .icon:nth-child(1)
-  {
-    color: #000;
-    transition: .6s;
-  }
-  
-  .active .contacts .icon:nth-child(2)
-  {
-    color: #000;
-    transition: .6s;
-  }
 
 
 
 .active .right span
 {
-  background: #000;
+  background: #fff;
   height: .3rem;
   width: 100%;
   border-radius: .2rem;
@@ -258,6 +242,15 @@
 .nav .a:hover
 {
   color: #fff;
-  transition: .6s;
+  transition: .4s;
 }
 
+
+@media (max-width:900px) {
+   
+ .contacts .icon
+ {
+  display: none;
+ }
+
+}

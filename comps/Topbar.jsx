@@ -23,12 +23,12 @@ const {open, setOpen} = useContext(Context)
                     </a>
                 <div className="contacts">
                     <div className="icon">
-                        <RiContactsFill className={styles.topbaricon}/>
+                        <RiContactsFill className='topbaricon'/>
                         <span>+254 702363355</span>
                     </div>
 
                     <div className="icon">
-                        <GoMail className={styles.topbaricon}/>
+                        <GoMail className='topbaricon'/>
                         <span>rickmohaaa@gmail.com</span>
                     </div>
 
