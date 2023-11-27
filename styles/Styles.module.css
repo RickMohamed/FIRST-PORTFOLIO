@@ -1,3 +1,7 @@
+@media (max-width:800px) {
+
+}
+
 
 .topbaricon
 {
@@ -14,6 +18,7 @@
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  margin-bottom: 9rem;
 }
 
 .left
@@ -55,15 +60,16 @@
 {
   display: flex;
   flex-direction: column;
+  padding-left: 1.7rem;
   width: 100%;
   height: 100%;
-  padding-left: 2rem;
   justify-content: center;
 }
 .rightwrapper h1
 {
-  font-size: 4.7rem;
-  margin: .625rem 0;
+  transform: scale(1, .8);
+  font-size: 6.7rem;
+  color: aqua;
 }
 
 .rightwrapper h2
@@ -80,7 +86,7 @@
 
 .rightwrapper h3 span
 {
-  color: red;
+  color: aqua;
 }
 
 
@@ -194,7 +200,7 @@
 .menuu div:hover li p
 {
   transition: .27s ease;
-  color: red;
+  color: aqua;
   letter-spacing: .27rem;
 }
 
@@ -210,13 +216,20 @@
 
 .menuu
 {
-  width: 14.75rem;
+  width: 10.75rem;
 }
 
 
 .menuu li p
 {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
+}
+
+.rightwrapper h1
+{
+  font-size: 4.7rem;
+  color: aqua;
+  margin: .625rem 0;
 }
 
 }
@@ -286,7 +299,7 @@
   @media (max-width:600px) {
     .intro
     {
-      min-height: 100vh;
+      height: 60vh;
       flex-direction: column;
     }
     .introimg
@@ -298,6 +311,11 @@
     {
       position: absolute;
       height: 70vh;
+    }
+
+    .right h3
+    {
+      font-size: 2.1rem;
     }
   
   }

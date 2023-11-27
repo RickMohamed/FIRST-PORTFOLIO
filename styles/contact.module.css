@@ -1,8 +1,49 @@
+@media (max-width:1200px) {
+  .right .contactCard
+  {
+    margin-left: auto;
+    margin-right: 3rem;
+  }
+}
 
+@media (max-width:1000px) {
+  .contact
+  {
+    flex-direction: column;
+    min-height: 150vh;
+  }
+
+  .right .contactCard
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media (max-width:800px) {
+
+  .right .contactCard
+  {
+    scale: .9;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width:700px) {
+  .right .contactCard
+  {
+    scale: .8;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .contact {
     background: #000;
     background-size: cover;
+    padding-right: 2rem;
     background-repeat: no-repeat;
     display: flex;
     width: 100vw;
@@ -15,19 +56,21 @@
 {
     flex: .5;
     overflow: hidden;
+
 }
 
 .left img
 {
   object-fit: cover;
     height: 100%;
+    z-index: -5;
     width: 100%;
 }
 
 
 .right {
   background: hsla(0, 0%, 0%, 0.945);
-    flex: .9;
+    flex:.9;
     display: flex;
     gap: 1.2rem;
     flex-direction: column;
@@ -43,31 +86,51 @@
 
 .right .contactCard
 {
-  width: 30rem;
-  overflow: visible;
-  border: 1.5px solid #fff;
-  height: 24rem;
-  background-color: #111;
+  
   display: flex;
+  justify-content: end;
+  padding: 0 2rem;
+  width: 40rem;
+  position: absolute;
   align-items: center;
 }
 
 .contactDetails
 {
-  background: #222;
-  border: 1.5px solid #fff;
+  background: rgb(0, 0, 0);
+  border: 2.5px solid aqua;
   height: 90%;
-  display: flex;
+    z-index: 8;
+    left: 3rem;
+    display: flex;
   flex-direction: column;
   justify-content: space-around;
   gap: 1rem;
-  width: 23rem;
+  width: 16rem;
+  position: absolute;
   padding: 1.5rem .99rem;
-  transform: translateX(-8rem);
+}
+
+
+
+.contactDetails h2
+{
+  font-family: serif, "Helvetica Neue", "Lucida Grande", Arial;
+  font-stretch: ultra-expanded;
+  margin: 0 auto;
+  transform: scale(1.1, .9);
+  color: #ffffffd2;
+}
+.contactDetails h1
+{
+  background: red;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 .contactDetails ul 
 {
+  color: aqua;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
@@ -84,21 +147,45 @@
 {
   width: 100%;
   font-size: 1.8rem;
+  padding-top: 1rem;
+  border-top: 3px solid aqua;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
+  overflow: hidden;
+}
+
+.formCard
+{
+  display: flex;
+  width: 25rem;
+  border: 2.5px solid #fff;
+  height: 24rem;
+  margin: auto 0;
+  padding: 3rem 2rem;
+  gap: 1.1rem;
+}
+
+.cardIcon
+{
+  transition: .3s ease;
+}
+.cardIcon:hover
+{
+  transition: .3s ease;
+  color: aqua;
+  cursor: pointer;
+  transform: rotateZ(30deg);
 }
 
 .form
 {
+  margin-left: auto;
+  width: 15rem;
+  gap: 1.5rem;
   display: flex;
-  width: 20rem;
-  transform: translateX(-4rem);
   flex-direction: column;
-  justify-content: start;
-  margin: auto 0;
-  padding: 3rem 0;
-  gap: 1.1rem;
 }
 
 .form input
@@ -106,6 +193,8 @@
   padding: .6rem;
   border: 2.5px solid;
   color: #fff;
+  width: 100%;
+  font-size: 1.1rem;
   height: 2.9rem;
   background: transparent;
   border-radius: .4rem;
@@ -122,6 +211,7 @@
 {
   padding: .6rem;
   border: 2.5px solid;
+  font-size: 1.1rem;
   color: #fff;
   height: 7rem;
   background: transparent;
@@ -141,13 +231,3 @@
   margin: 0 auto;
 }
 
-
-
-@media (max-width:800px) {
-   .contact
-   {
-    flex-direction: column;
-   }
-
-   
-}

@@ -20,16 +20,23 @@
 
 .about {
     width: 100vw;
-  height: calc(100vh - 4.6rem);
-  scroll-snap-align: start;
-color: #fff;
-  display: flex;
+    min-height: calc(100vh - 4.6rem);
+    scroll-snap-align: start;
+    color: #fff;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 9rem;
 }
 
+
 .about h1 {
-    font-size: 3.2rem;
+    font-size: 1.5rem;
+    letter-spacing: .8rem;
+  transform: scale(1.1, .9);
+  color: #888;
+    font-family: serif;
+    margin: 3rem 0;
 }
 
 
@@ -43,72 +50,81 @@ color: #fff;
 }
 
 
-.card {
-    width: 250px;
-    height: 70%;
-    border-radius: .625rem;
-    border: 1px solid transparent;
-    box-shadow: 0px 4px 30px #ffffff40;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 20px;
-    transition: .4s;
-}
-
-.card:hover{
-    box-shadow: 0px 4px 30px #ffffff5f;
-    transition: .4s;
-}
-
-
-.top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.leftimg
+.card
 {
-    height: 25px;
+    border: .5vmin solid #888;
+    cursor: pointer;
+    border-radius: .7rem;
+    position: relative;
+    width: 70vmin;
+    min-height: 79vmin;
 }
 
-.userimg
+
+
+
+.card:hover .cardContent
 {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 30px;
+    background-position: -96% 0%;
+    background-size: 5vmin 5vmin;
 }
 
-.rightimg
+
+.cardContent
 {
-    height: 25px;
+    padding: 1rem;
+    background: radial-gradient(
+      aqua 8%,
+        transparent 8%
+    );
+    background-position: 0% 0%;
+    background-size: 5vmin 5vmin;
+    height: 100%;
+    width: 100%;
+    transition: 2050ms ease-out;
+    z-index: 2;
+    position: absolute;
 }
 
-
-.center p
+.cardContent h2
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .625rem;
-    border-radius: .625rem;
-    background-color: #000;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+  transform: scale(1.1, .9);
+  position: relative;
+    font-family: serif;
+    letter-spacing: .4rem;
+    margin: 2rem 0;
 }
 
-.bottom {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+
+
+.cardContent p
+{
+    color: #999;
+    position: relative;
+    backdrop-filter: blur(3px);
+    opacity: 1;
+    padding: .2rem;
+    font-size: 1.1rem;
+    transition: 1s ease;
 }
 
-.bottom h3 {
-    margin-bottom: 5px;
-}
+@media (max-width:1000px) {
 
-.bottom h4{
-    color: rgb(121, 115, 115);
+    .cardContent p
+    {
+        font-size: 1rem;
+
     }
+  
+}@media (max-width:500px) {
+
+    .cardContent p
+    {
+        font-size: .9rem;
+
+    }
+  
+}

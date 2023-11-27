@@ -17,8 +17,8 @@ const Contact = () => {
         <img src="street.jpg" alt="" />
       </div>
       <div className={styles.right}>
-        <h2>Contact</h2>
        <div className={styles.contactCard}>
+          <h1>Contact</h1>
           <div className={styles.contactDetails}>
            <h2>Get in touch</h2>
             <ul>
@@ -37,16 +37,18 @@ const Contact = () => {
             </ul>
 
             <div className={styles.icons}>
-              <AiFillInstagram/>
-              <FaGithubAlt/>
-              <FaLinkedin/>
+              <AiFillInstagram className={styles.cardIcon}/>
+              <FaGithubAlt className={styles.cardIcon}/>
+              <FaLinkedin className={styles.cardIcon}/>
             </div>
           </div>
-          <div className={styles.form}>
-            <input placeholder='Name' type="text" />
-            <input placeholder='Email' type="text" />
-            <textarea placeholder='Message' className={styles.message} type="text" />
-            <button>Send</button>
+          <div className={styles.formCard}>
+            <div className={styles.form}>
+              <input placeholder='Name' type="text" />
+              <input placeholder='Email' type="text" />
+              <textarea placeholder='Message' className={styles.message} type="text" />
+              <button>Send</button>
+            </div>
           </div>
        </div>
       </div>

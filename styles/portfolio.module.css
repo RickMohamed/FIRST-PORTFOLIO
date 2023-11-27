@@ -6,11 +6,13 @@
     justify-content: center;
     width: 100vw;
   min-height: calc(100vh - 4.6rem);
+  margin-bottom: 9rem;
+
 }
 
 .portfolio h1
 {
-    margin: 8rem 0 3rem 0;
+    margin: 3rem 0;
     font-size: 1.5rem;
     color: #888;
     letter-spacing: .7rem;
@@ -70,7 +72,7 @@
 
 .item:hover
 {
-    background: red;
+    background: aqua;
 }
 
 

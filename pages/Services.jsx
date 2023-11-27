@@ -21,14 +21,14 @@ const Services = () => {
         img:
           "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
       },
-      {
-        id: "3",
-        title: "Branding",
-        desc:
-        "In the dynamic digital landscape, a strong brand identity is the cornerstone of success. As a software engineer with a keen eye for design, I specialize in crafting distinctive and impactful brand identities that resonate with your audience. Elevate your brand with my comprehensive branding services designed to leave a lasting impression.",
-        img:
-          "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-      },
+      // {
+      //   id: "3",
+      //   title: "Branding",
+      //   desc:
+      //   "In the dynamic digital landscape, a strong brand identity is the cornerstone of success. As a software engineer with a keen eye for design, I specialize in crafting distinctive and impactful brand identities that resonate with your audience. Elevate your brand with my comprehensive branding services designed to leave a lasting impression.",
+      //   img:
+      //     "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
+      // },
     ];
   
 
@@ -36,9 +36,14 @@ const Services = () => {
       <div className={styles.services} id="services">
           <h1>Services</h1>
           <div className={styles.servicesCards}>
-              <div className={styles.servicesCard}>
-            
-              </div>
+              {
+                data.map(item=>(
+                  <div className={styles.servicesCard}>
+                      <h2>{item.title}</h2>
+                      <p>{item.desc}</p>
+                  </div>
+                ))
+              }
           </div>
       </div>
     );

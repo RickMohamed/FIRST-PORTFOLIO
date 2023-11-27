@@ -96,6 +96,7 @@
   margin-left: auto;
   display: flex;
   align-items: center;
+  overflow: hidden;
   gap: 1rem;
 }
 
@@ -103,10 +104,19 @@
 {
   text-decoration: none;
   margin-left: 1rem;
+  transition: .3s ease;
   font-size: 1.7rem;
   color: #fff;
 }
 
+
+.topbar-icon:hover
+{
+  transition: .3s ease;
+  color: aqua;
+  cursor: pointer;
+  transform: rotateZ(-30deg);
+}
 
 .topbaricon
 {
@@ -122,7 +132,7 @@
 
 .contacts .icon:hover
 {
-  color: red;
+  color: aqua;
   transition: .6s;
 
 }
@@ -212,7 +222,7 @@
 
 .active .right:hover span
 {
-  background: red;
+  background: aqua;
   transition: .5s ease;
 }
 
@@ -234,7 +244,7 @@
 }
 .a
 {
-  color: red;
+  color: aqua;
   text-decoration: none;
   transition: .4s;
 }
